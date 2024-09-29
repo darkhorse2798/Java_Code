@@ -17,7 +17,8 @@ public class ArrayDuplicate {
         Set<Integer> set = Arrays.stream(array).boxed().collect(Collectors.toSet());
         List<Integer> res = list.stream().filter(item -> list.indexOf(item)!=list.lastIndexOf(item)).distinct().collect(Collectors.toList());
         
-        System.out.println(set);
+        System.out.println(res);
+//        System.out.println(set);
         
 	}
 
