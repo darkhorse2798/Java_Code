@@ -11,7 +11,7 @@ public class ListNodes {
   public static void printList(ListNodes head){
 	  ListNodes ptr = head;
 	  while (ptr != null) {
-          System.out.print(ptr.val + " -> ");
+          System.out.print(ptr.value + " -> ");
           ptr = ptr.next;
       }
       System.out.println("null");
