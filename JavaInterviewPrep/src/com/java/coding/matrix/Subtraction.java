@@ -1,6 +1,6 @@
 package com.java.coding.matrix;
 
-public class Subtraction {
+public class Subtraction{
     int row = 3;
     int col = 3;
     int matrix1[][] = new int[row][col];
