@@ -3,7 +3,7 @@ package com.java.coding;
 public class SecondLargest {
 	
 	public static void main(String[] args) {
-		  int arr[] = {3, 3,3,3,3};
+		  int arr[] = {3, 4, 1, 2, 5, 6, 7, 8, 9};
 
 	        int max = Integer.MIN_VALUE;
 	        int secondMax = Integer.MIN_VALUE;
