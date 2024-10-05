@@ -1,46 +1,31 @@
 package com.java.coding.matrix;
 
 public class Subtraction{
-    int row = 3;
-    int col = 3;
-    int matrix1[][] = new int[row][col];
-    int matrix2[][] = new int[row][col];
-    int num1 = 1;
-    int num2 = 10;
-
-    int diffMatrix[][] = new int[row][col];
-
-    public void performMatrixSubtraction() {
-        for (int i = 0; i < matrix1.length; i++) {
-            for (int j = 0; j < matrix1[0].length; j++) {
-                matrix1[i][j] = num1;
-                num1++;
-            }
-        }
-
-        for (int i = 0; i < matrix2.length; i++) {
-            for (int j = 0; j < matrix2[0].length; j++) {
-                matrix2[i][j] = num2;
-                num2++;
-            }
-        }
-
-        for (int i = 0; i < diffMatrix.length; i++) {
-            for (int j = 0; j < diffMatrix[0].length; j++) {
-                diffMatrix[i][j] = matrix1[i][j] - matrix2[i][j];  
-            }
-        }
-
-        for (int i = 0; i < diffMatrix.length; i++) {
-            for (int j = 0; j < diffMatrix[0].length; j++) {
-                System.out.print(diffMatrix[i][j] + " ");
-            }
-            System.out.println();
-        }
-    }
+    
 
     public static void main(String[] args) {
         Subtraction sub = new Subtraction();
-        sub.performMatrixSubtraction();
+        int matrix1[][]= {{1,2,3},{4,5,6},{7,8,9}};
+        int matrix2[][]= {{4,5},{7,8},{9,10}};
+        
+        int result[][]= new int[3][2];
+        
+        for(int i=0; i<3;i++) {
+        	int sum=0;
+        	for(int j=0;j<2;j++) {
+        		for(int k=0; k<3;k++) {
+        			
+        			sum+=matrix1[i][k]*matrix2[k][j];
+        		}
+        		result[i][j]=sum;
+        	}
+        }
+        for(int i=0; i<3;i++) {
+        	for(int j=0;j<2;j++) {
+        		System.out.print(result[i][j]+" ");
+        		
+        	}
+        	System.out.println();
+        }
     }
 }

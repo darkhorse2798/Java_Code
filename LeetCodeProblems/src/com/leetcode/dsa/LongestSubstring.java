@@ -30,7 +30,7 @@ public class LongestSubstring {
 
 	return maxLength;
 	    
-	    }
+}
 	//   public static int lengthOfLongestSubstring(String s) {
 //	         int maxLength = 0;
 	        
