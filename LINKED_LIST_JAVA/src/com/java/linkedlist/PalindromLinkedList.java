@@ -52,10 +52,10 @@ public class PalindromLinkedList {
         ListNode current = head;
         while (current != null) {
             ListNode next = current.next;
-            current.next = prev;
-            prev = current;
-            current = next;
-        }
+            current.next = prev;   //1 2 3 
+            prev = current;  //   p  c n
+            current = next;  //   c  c p
+        }                   //       n
         return prev;
     }
 }

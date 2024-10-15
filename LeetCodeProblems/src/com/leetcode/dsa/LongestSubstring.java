@@ -17,11 +17,15 @@ public class LongestSubstring {
 	int left = 0;
 	// abcabcbb
 	while (right < s.length()) {
-	    int idx = hashMap.getOrDefault(s.charAt(right), -1);
+	  
+		int idx = hashMap.getOrDefault(s.charAt(right), -1);
+		//r r r r r r r r
 	    //a b c a b c b b
+	    //l l l l
+	   //idx=-1,-1,-1,0
 	   // 0 1 2 3 4 5 6 7  
 	    if (idx >= left) {  //
-	        left = idx + 1;
+	        left = idx + 1;// left=0+1=1;1+1=2
 	    }
 	    maxLength = Math.max(maxLength, right - left + 1);
 	    hashMap.put(s.charAt(right), right);
