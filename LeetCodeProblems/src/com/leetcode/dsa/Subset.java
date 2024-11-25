@@ -11,10 +11,11 @@ public class Subset {
 		
 	}
 	public static List<List<Integer>> subSet(int arr[],List<List<Integer>> res){
+		
 		res.add(new ArrayList<>());
 		for(int num : arr) {
 			int size=res.size();
-			for(int j=0;j<size;j++) {
+			for(int j=0;j<size;j++){
 				  List<Integer> temp = new ArrayList<>(res.get(j));
 				  temp.add(num);
 				  res.add(temp);

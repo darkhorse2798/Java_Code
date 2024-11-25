@@ -22,7 +22,7 @@ public int val;
   public static ListNode insertAtMiddle(ListNode head,int valToInsert,int position) {
 	  ListNode newNode = new ListNode(valToInsert);
 	  if (head == null) {
-	        return newNode;
+	        return newNode; 
 	    }
 	  ListNode ptr=head;
 	  for(int i=0;i<position;i++) {
@@ -64,9 +64,11 @@ public int val;
   public static ListNode deleteFromMiddle(ListNode head,int position) {
 	  ListNode temp=head;
 	  if(head==null) return head;
-	  for(int i=0;i<position-1;i++) {
+	  for(int i=0;i<position-1;i++){
 		  temp=temp.next;
 	  }
+
+	
 	  ListNode nodeTodelete=temp.next;
 	  ListNode nextNode=nodeTodelete.next;
 	  temp.next=nextNode;
@@ -118,6 +120,7 @@ public int val;
 	  printList(l1);
 	  System.out.println();
 	  System.out.println("Deleting the element from middle");
+	  
 	  l1=deleteFromMiddle(l1,2);
 	  printList(l1);
 

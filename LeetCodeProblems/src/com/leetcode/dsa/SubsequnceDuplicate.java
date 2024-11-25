@@ -4,7 +4,7 @@ import java.util.*;
 
 public class SubsequnceDuplicate {
 	public static void main(String[] args) {
-		int arr[]= {2,1,2,3};
+		int arr[]= {1,2,2,3};
 		System.out.println(subset(arr));
 	}
 	public static List<List<Integer>> subset(int[]arr) {
