@@ -3,7 +3,7 @@ package com.recurssion.java.genpact;
 public class PowerOfANumber {
 	public static void main(String[] args) {
 		
-		System.out.println(poweOfANumber(3,4,1));
+		System.out.println(poweOfANumber(5,3,1));
 		
 	}
 

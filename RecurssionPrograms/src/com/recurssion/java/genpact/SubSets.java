@@ -4,8 +4,10 @@ import java.util.*;
 
 public class SubSets {
 	
+	
 	public static void main(String[] args) {
-		        int[] arr = {1, 2, 4};
+		        int[] arr = {2,1,2};
+		        
 		        List<List<Integer>> resultList = subSetBackTrack(arr);
 		        System.out.println(resultList);
 		    }

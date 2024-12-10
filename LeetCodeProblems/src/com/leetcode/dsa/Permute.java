@@ -5,23 +5,23 @@ import java.util.*;
 public class Permute {
 
     public static void main(String[] args) {
-        String s = "abc";
+        String s = "xyz";
         int left = 0;
         int right = s.length() - 1;
-        List<String> permutations = permuataioon(s, left, right);
-        System.out.println(permutations); // Print all permutations
+        List<String> permutations = fun(s, left, right);
+        System.out.println(permutations); 
     }
 
-    private static List<String> permuataioon(String s, int left, int right) {
-        List<String> res = new ArrayList<>(); // List to store results
+    private static List<String> fun(String s, int left, int right) {
+        List<String> res = new ArrayList<>(); 
         if (left == right) {
             res.add(s);
             return res;
         }
         for (int i = left; i <= right; i++) {
-            s = swap(s, left, i); // Swap characters
-            res.addAll(permuataioon(s, left + 1, right)); 
-            s = swap(s, left, i); // Backtrack
+            s = swap(s, left, i); 
+            res.addAll(fun(s, left + 1, right)); 
+            s = swap(s, left, i); 
         }
         return res;
     }
